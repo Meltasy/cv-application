@@ -1,0 +1,66 @@
+:root {
+  --text-color: #000C0A;
+  --background-color: #C7EAE6;
+  --primary-color: #236A62;
+  --primary-color-light: #5A9992;
+  --prmary-color-dark: #043B35;
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 0.3em;
+  margin-left: 5px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: minmax(1fr, 450px), minmax(4fr, 800px);
+  grid-template-rows: repeat(3, min-content);
+}
+
+section {
+  margin-left: 5px;
+}
+
+form {
+  display: grid;
+}
+
+input,
+label{
+  max-width: 300px;
+  margin: 5px;
+  font-family: inherit;
+}
+
+button {
+  margin: 5px;
+  max-width: min-content;
+  padding: 5px 10px;
+}
+
+textarea {
+  max-width: 400px;
+  margin: 5px;
+  font-family: inherit;
+}
+
+input[type='month'] {
+  max-width: 200px;
+  margin: 5px;
+}
+
+form .dates {
+  display: flex;
+}
+
+form .dates div {
+  display: grid
+}

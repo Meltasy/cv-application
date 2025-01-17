@@ -1,0 +1,4 @@
+div .experience {
+    grid-column: 1;
+    grid-row: 3;
+}
